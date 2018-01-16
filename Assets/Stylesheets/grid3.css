@@ -1,15 +1,17 @@
 body {
+    height: 100%;
     font-family: 'Hind', sans-serif;
     font-size: 1em;
     color: #003082;
-    background-image: url(Images/maxresdefault3.png);
-    background-repeat: none;
+    background-image: url(Images/maxresdefault4.png);
+    background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     text-decoration: none;
 }
+
 /* image from https://i.ytimg.com/vi/3qFNEiyU02Y/maxresdefault.jpg */
 
 form {
@@ -322,6 +324,22 @@ div:hover div button {
 
 
 /* NEW LAYOUTTTTT RESPONSIIIIIIIIIIiiiiiiiiiiiiiiiVEEEEE */
+@media screen and (max-width: 25rem) {
+    h1 {
+        font-size: 1.1rem;
+    }
+    a > img {
+        height: 1.3rem;
+    }
+
+
+    a[href="Login.html"] img,
+    img[alt="search icon"] {
+        height: 1.7rem;
+        padding: 0.2rem;
+    }
+
+}
 
 @media screen and (min-width: 29rem),
 (max-width:40rem) {
