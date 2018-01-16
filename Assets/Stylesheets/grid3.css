@@ -1,0 +1,457 @@
+body {
+    font-family: 'Hind', sans-serif;
+    font-size: 1em;
+    color: #003082;
+    background-image: url(Images/maxresdefault3.png);
+    background-repeat: none;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    text-decoration: none;
+}
+/* image from https://i.ytimg.com/vi/3qFNEiyU02Y/maxresdefault.jpg */
+
+form {
+    display: block;
+    margin: 1em 2em;
+}
+
+input[type=checkbox] {
+    display: inline-block;
+}
+
+/* HEADER */
+
+header {
+    background: white;
+    height: 3.5rem;
+    width: 100%;
+    box-shadow: 0 2px 0 0 #c5c5cb;
+    display: grid;
+    grid-template-columns: 1.5rem 1rem auto 1.5rem;
+    align-items: center;
+}
+
+nav {
+    grid-column-start: 3;
+    display: inline-grid;
+    grid-template-columns: 6rem auto 2.5rem 2.5rem;
+    align-items: center
+}
+
+header > a {
+    grid-column-start: 2;
+    align-self: center;
+}
+
+a > img {
+    height: 1.5rem;
+}
+
+h1 {
+    justify-self: center;
+    font-size: 1.3rem;
+    font-weight: 800;
+    grid-column-start: 2;
+
+}
+
+a[href="Login.html"] img,
+img[alt="search icon"] {
+    height: 2rem;
+    padding: 0.2rem;
+}
+
+img[alt="search icon"] {
+    grid-column-start: 3;
+    justify-self: end;
+    align-self: center;
+}
+
+a[href="Login.html"] img {
+    grid-column-start: 4;
+    align-self: center;
+}
+
+input[type="text"] {
+    background-color: #e6e6e9;
+    border: none;
+}
+
+/* sticky header from https://www.w3schools.com/howto/howto_js_sticky_header.asp */
+
+/* .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+/* BLOCKS */
+
+article {
+    background: white;
+    margin: 1.5rem;
+    box-shadow: inset 0 -0.125rem 0 #c5c5cb;
+}
+
+/* img[alt="top image"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+} */
+
+/* grid for the verhalen */
+
+article > img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 10rem;
+    margin-bottom: -0.5em;
+    grid-column-start: 1;
+}
+
+section:last-child > article {
+    display: grid;
+    max-height: 30rem;
+    grid-template-rows: 10rem 1fr;
+    grid-template-columns: 100%;
+}
+
+img + div {
+    display: grid;
+    height: 100%;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-template-rows: 20% 40% 40%;
+    grid-template-columns: 65% auto 3rem 3rem;
+    padding: 1rem 1rem 1rem 0;
+}
+
+
+div > img {
+    height: 2rem;
+    padding: 0.2rem;
+    align-self: center;
+}
+
+button + img,
+h4:first-of-type {
+    grid-column-start: 3;
+    grid-row-start: 3;
+    justify-self: center;
+    align-self: center;
+}
+
+h4 + img,
+h4:nth-of-type(2) {
+    grid-column-start: 4;
+    grid-row-start: 3;
+    justify-self: center;
+}
+
+h4 {
+    font-size: 0.9rem;
+    align-self: center;
+}
+
+div + h3 {
+    align-self: center;
+}
+
+h3 + input[id=favourite] {
+    display: none;
+    height: 2rem;
+    width: 2rem;
+    grid-column-start: 4;
+    align-self: center;
+    justify-self: center;
+}
+
+input[id=favourite] + label {
+    display: block;
+    background-image: url(Images/Fav%20Icon.png);
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    grid-column-start: 4;
+}
+
+input[id=favourite]:checked + label {
+    display: block;
+    background-image: url(Images/Fav%20Icon%20II.png);
+    background-repeat: no-repeat;
+    background-size: 2rem;
+}
+
+#myDropdown input {
+    margin-left: 1rem;
+}
+
+/* */
+
+p,
+label {
+    color: #0079d3;
+}
+
+label {
+    display: inline-block;
+
+}
+
+article button {
+    color: white;
+    text-decoration: none;
+    background-color: #0079d3;
+    height: 2.5rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem 1.5rem 1.5rem 2rem;
+    border: none;
+    align-self: center;
+    box-shadow: inset 0 -0.125rem 0 #005ca0;
+    transition: box-shadow 0.2s ease-in-out;
+    grid-row-start: 3;
+}
+
+button > a {
+    text-decoration: none;
+    color: white;
+}
+
+article button:hover {
+    box-shadow: inset 0 -3rem 0 hsla(218, 100%, 25%, 1);
+
+}
+
+
+article p {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+}
+
+p,
+h3 {
+    margin: 0.5rem 1.5rem;
+}
+
+h3 {
+    align-self: center;
+}
+
+p {
+    padding-bottom: 0.2rem;
+}
+
+h2 {
+    margin: 1.5rem;
+}
+
+h2 + h3 {
+    padding-bottom: 1.5rem;
+}
+
+.top {
+    background-image: url("Images/Recept%202.0.jpg");
+    background-size: cover;
+    box-shadow: inset 0 -0.125rem 0 hsla(218, 100%, 25%, 0.75);
+    transition: all 0.5s ease;
+    color: white;
+
+}
+
+.top + article {
+    background-image: url("Images/Van%20Vader%20Tot%20Zoon.png");
+    background-size: cover;
+    box-shadow: inset 0 -0.125rem 0 hsla(218, 100%, 25%, 0.75);
+    transition: all 0.5s ease;
+
+}
+
+.top:hover,
+.top + article:hover {
+    color: white;
+    box-shadow: inset 0 -15rem 0 hsla(218, 100%, 25%, 0.75);
+}
+
+/* DROP DOWN FILTER AND SORT from w3schools https://www.w3schools.com/howto/howto_css_dropdown.asp & https://www.w3schools.com/howto/howto_js_dropdown.asp */
+
+.dropdown > button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-family: 'Hind';
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: left;
+    border: none;
+    background: #ffc917;
+    box-shadow: 0 2px 0 0 #c5c5cb;
+}
+
+section + div {
+    position: relative;
+    display: block;
+    margin: 0 1.5rem;
+}
+
+
+button + div {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+}
+
+.show {
+    display: block;
+    width: 100%;
+    padding-bottom: 1.5rem;
+}
+
+div:hover div button {
+    text-decoration: underline;
+}
+
+
+/* NEW LAYOUTTTTT RESPONSIIIIIIIIIIiiiiiiiiiiiiiiiVEEEEE */
+
+@media screen and (min-width: 29rem),
+(max-width:40rem) {
+    header + div {
+        max-width: 28rem;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 40rem) {
+    header + div {
+        max-width: 100%;
+    }
+    section:last-child {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+        margin: 1.5rem;
+    }
+    .top,
+    .top + article {
+        width: 70%;
+    }
+    section:last-child article {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 58rem) {
+    section:last-child {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+        margin-top: 1.5rem;
+    }
+    section:last-child article {
+        margin: 0;
+    }
+    div > section {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 2rem;
+        margin: 1.5rem;
+    }
+    .top,
+    .top + article {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 74rem) {
+    header + div {
+        max-width: 65rem;
+        margin: auto;
+    }
+}
+
+/* Log in page */
+
+form {
+    display: block;
+    max-width: 30rem;
+    border: none;
+    background-color: white;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: inset 0 -0.125rem 0 #c5c5cb;
+    
+}
+fieldset {
+    border: none;
+}
+fieldset input {
+    display: block;
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: inset 0 -0.125rem 0 #c5c5cb;
+    transition: 0.5s ease;
+}
+fieldset input:hover {
+    letter-spacing: 0.1rem;
+    box-shadow: inset 0 -0.125rem 0 #a6a6ac;
+}
+fieldset input:focus {
+    display: block;
+    outline: none;
+    border: none;
+    width: 20rem;
+    height: 3rem;
+    padding-left: 1rem;
+    box-shadow: inset 0 -0.125rem 0 #a6a6ac;
+}
+fieldset input:valid {
+    display: block;
+    background-color: rgba(141,255,168, 0.5);
+    outline: none;
+    border: none;
+    width: 20rem;
+    height: 3rem;
+    padding-left: 1rem;
+    box-shadow: inset 0 -0.125rem 0 #5f9e6e;
+}
+
+input[type=submit]{
+    margin: 1.5rem;
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    background-color: #0079d3;
+    border: none;
+    align-self: center;
+    box-shadow: inset 0 -0.125rem 0 #005ca0;
+    transition: box-shadow 0.2s ease-in-out;
+}
+input[type=submit]:focus,
+input[type=submit]:hover{
+    box-shadow: inset 0 -3rem 0 hsla(218, 100%, 25%, 1);
+}
+
+fieldset h3 {
+    padding: 0;
+    padding-bottom: 1rem;
+    margin: 0;
+}

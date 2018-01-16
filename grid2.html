@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Assets/Stylesheets/Grid2.css">
+    <link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
+    <script type="text/javascript" src="Assets/Script/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <a href="grid2.html"><img src="Assets/Images/NSVerhalen.png" alt="NSverhalen logo"></a>
+        <!-- <input type="text" name="zoekbar" id="search" placeholder="Zoeken">
+        <label for="search"></label>-->
+        <nav>
+            <h1>Mijn verhalen</h1>
+            <img src="Assets/Images/Search%20Icon.png" alt="search icon">
+
+            <a href="Login.html"><img src="Assets/Images/Profile%20Icon.png" alt="profile icon"></a>
+        </nav>
+    </header>
+    <div>
+        <!-- this is the body wrap for the main grid -->
+        <div>
+            <!-- the div for the top -->
+            <!-- top blokken -->
+            <section>
+
+                <article class="top">
+                    <h2>Populair</h2>
+                    <h3>Recept</h3>
+                </article>
+
+
+                <article>
+                    <h2>Willekeurig</h2>
+                    <h3>Ongeboren</h3>
+                </article>
+            </section>
+
+            <!-- Filter en zoek shit -->
+            <div class="dropdown">
+                <button onclick="filtermenu()" class="dropbtn">Filter en Sorteer</button>
+                <div id="myDropdown" class="dropdown-content">
+
+                    <h2> Zoeken op lengte verhaal</h2>
+                    <input type="checkbox" name="checkbox" id="kort" value="value">
+                    <label for="kort">Korte verhalen</label>
+                    <input type="checkbox" name="checkbox" id="middel" value="value">
+                    <label for="middel">Middellange verhalen</label>
+                    <input type="checkbox" name="checkbox" id="lang" value="value">
+                    <label for="lang">Lange verhalen</label>
+
+                    <h2> Zoeken op kleur</h2>
+                    <input type="color" name="colour" id="colour" value="value">
+                    <label for="colour"></label>
+
+                    <h2>Sorteren</h2>
+                    <input type="radio" name="radio" id="comments" value="value">
+                    <label for="comments">Meeste comments</label>
+                    <input type="radio" name="radio" id="likes" value="value">
+                    <label for="likes">Meeste likes</label>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Alle verhalen -->
+
+        <section>
+            <article>
+                <img src="Assets/Images/VZ%20Desktop%201.png" alt="thumbnail verhaal vadertotzoon">
+                <div>
+                    <h3>Van vader tot zoon</h3>
+                    <input type="checkbox" name="checkbox" id="favourite" value="value">
+                    <label for="favourite"></label>
+                    <p>Je ligt vredig in je wagen te slapen als ik de bus uitstap op die druilerige [...] </p>
+                    <button type="button"><a href="Verhaal.html">Lees verder ></a> </button>
+                    <img src="Assets/Images/Like%20Icon.png" alt="hearticon">
+                    <h4>12</h4>
+                    <img src="Assets/Images/Comment%20Icon.png" alt="commenticon">
+                    <h4>2</h4>
+                </div>
+            </article>
+            <article>
+                <img src="Assets/Images/Nichterig%20Desktop%201.png" alt="thumbnail verhaal nichterig">
+                <div>
+                    <h3>Nichterig</h3>
+                    <input type="checkbox" name="checkbox" id="favourite" value="value">
+                    <label for="favourite"></label>
+                    <p>Dus ik stap de bus uit, met mijn zoon in mijn wagen, en ik schrik me [...]
+
+                    </p>
+                    <button type="button"><a href="Verhaal2.html">Lees verder ></a></button>
+                    <img src="Assets/Images/Like%20Icon.png" alt="hearticon">
+                    <h4>12</h4>
+                    <img src="Assets/Images/Comment%20Icon.png" alt="commenticon">
+                    <h4>2</h4>
+                </div>
+            </article>
+            <article>
+                <img src="Assets/Images/12.png" alt="thumbnail verhaal droom">
+                <div>
+                    <h3>Terugspoelen</h3>
+                    <input type="checkbox" name="checkbox" id="favourite" value="value">
+                    <label for="favourite"></label>
+                    <p>In een babywinkel op het Bos en Lommerplein koop ik babyschoentjes. Teleurgesteld verlaat ik de [...]
+
+                    </p>
+                    <button type="button"><a href="Verhaal3.html">Lees verder ></a></button>
+                    <img src="Assets/Images/Like%20Icon.png" alt="hearticon">
+                    <h4>12</h4>
+                    <img src="Assets/Images/Comment%20Icon.png" alt="commenticon">
+                    <h4>2</h4>
+                </div>
+            </article>
+            <article>
+                <img src="Assets/Images/Regenboog%201%202.0.jpg" alt="thumbnail verhaal regenboog">
+                <div>
+                    <h3>Regenboog</h3>
+                    <input type="checkbox" name="checkbox" id="favourite" value="value">
+                    <label for="favourite"></label>
+                    <p>Jij bevindt je een paar kilometer verderop in de buik van je moeder. Ik heb je gisteren [...]
+
+                    </p>
+                    <button type="button"> Lees verder ></button>
+                    <img src="Assets/Images/Like%20Icon.png" alt="hearticon">
+                    <h4>12</h4>
+                    <img src="Assets/Images/Comment%20Icon.png" alt="commenticon">
+                    <h4>2</h4>
+                </div>
+            </article>
+            <article>
+                <img src="Assets/Images/Screenshot_1.png" alt="thumbnail verhaal droom">
+                <div>
+                    <h3>Essentie</h3>
+                    <input type="checkbox" name="checkbox" id="favourite" value="value">
+                    <label for="favourite"></label>
+                    <p>Mijn zoektocht naar Stijloefeningen van Raymond Queneau brengt mij bij de bibliotheek. Een Franse vrouw [...]
+
+                    </p>
+                    <button type="button"> Lees verder ></button>
+                    <img src="Assets/Images/Like%20Icon.png" alt="hearticon">
+                    <h4>12</h4>
+                    <img src="Assets/Images/Comment%20Icon.png" alt="commenticon">
+                    <h4>2</h4>
+                </div>
+            </article>
+            <article>
+                <img src="Assets/Images/ongeluk%202.0.jpg" alt="thumbnail verhaal droom">
+                <div>
+                    <h3>Ongeluk</h3>
+                    <input type="checkbox" name="checkbox" id="favourite" value="value">
+                    <label for="favourite"></label>
+                    <p>Voor het Centraal Station stap ik lijn 13 uit midden in een plas die zo diep [...]
+
+                    </p>
+                    <button type="button"> Lees verder ></button>
+                    <img src="Assets/Images/Like%20Icon.png" alt="hearticon">
+                    <h4>12</h4>
+                    <img src="Assets/Images/Comment%20Icon.png" alt="commenticon">
+                    <h4>2</h4>
+                </div>
+            </article>
+        </section>
+    </div>
+
+</body>
+
+</html>
