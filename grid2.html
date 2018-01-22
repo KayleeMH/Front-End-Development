@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="Assets/Stylesheets/Grid2.css">
     <link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
-    <script type="text/javascript" src="Assets/Script/script.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
 </head>
@@ -16,7 +16,7 @@
         <!-- <input type="text" name="zoekbar" id="search" placeholder="Zoeken">
         <label for="search"></label>-->
         <nav>
-            <h1>Mijn verhalen</h1>
+            <h1 id="faves">Mijn verhalen</h1>
             <img src="Assets/Images/Search%20Icon.png" alt="search icon">
 
             <a href="Login.html"><img src="Assets/Images/Profile%20Icon.png" alt="profile icon"></a>
@@ -75,7 +75,7 @@
                 <img src="Assets/Images/VZ%20Desktop%201.png" alt="thumbnail verhaal vadertotzoon">
                 <div>
                     <h3>Van vader tot zoon</h3>
-                    <input type="checkbox" name="checkbox" id="favourite" value="value">
+                    <input type="checkbox" name="fav" id="favourite" value="value">
                     <label for="favourite"></label>
                     <p>Je ligt vredig in je wagen te slapen als ik de bus uitstap op die druilerige [...] </p>
                     <button type="button"><a href="Verhaal.html">Lees verder ></a> </button>
@@ -89,12 +89,12 @@
                 <img src="Assets/Images/Nichterig%20Desktop%201.png" alt="thumbnail verhaal nichterig">
                 <div>
                     <h3>Nichterig</h3>
-                    <input type="checkbox" name="checkbox" id="favourite" value="value">
-                    <label for="favourite"></label>
+                    <input type="checkbox" name="fav" id="favourite2" value="value">
+                    <label for="favourite2"></label>
                     <p>Dus ik stap de bus uit, met mijn zoon in mijn wagen, en ik schrik me [...]
 
                     </p>
-                    <button type="button"><a href="verhaal2.html">Lees verder ></a></button>
+                    <button type="button"><a href="Nichterig.html">Lees verder ></a></button>
                     <img src="Assets/Images/Like%20Icon.png" alt="hearticon">
                     <h4>12</h4>
                     <img src="Assets/Images/Comment%20Icon.png" alt="commenticon">
@@ -105,8 +105,8 @@
                 <img src="Assets/Images/12.png" alt="thumbnail verhaal droom">
                 <div>
                     <h3>Terugspoelen</h3>
-                    <input type="checkbox" name="checkbox" id="favourite" value="value">
-                    <label for="favourite"></label>
+                    <input type="checkbox" name="fav" id="favourite3" value="value">
+                    <label for="favourite3"></label>
                     <p>In een babywinkel op het Bos en Lommerplein koop ik babyschoentjes. Teleurgesteld verlaat ik de [...]
 
                     </p>
@@ -121,8 +121,8 @@
                 <img src="Assets/Images/Regenboog%201%202.0.jpg" alt="thumbnail verhaal regenboog">
                 <div>
                     <h3>Regenboog</h3>
-                    <input type="checkbox" name="checkbox" id="favourite" value="value">
-                    <label for="favourite"></label>
+                    <input type="checkbox" name="fav" id="favourite4" value="value">
+                    <label for="favourite4"></label>
                     <p>Jij bevindt je een paar kilometer verderop in de buik van je moeder. Ik heb je gisteren [...]
 
                     </p>
@@ -134,11 +134,11 @@
                 </div>
             </article>
             <article>
-                <img src="Assets/Images/Screenshot_1.png" alt="thumbnail verhaal droom">
+                <img src="Assets/Images/Paranoia.png" alt="thumbnail verhaal paranoia">
                 <div>
-                    <h3>Essentie</h3>
-                    <input type="checkbox" name="checkbox" id="favourite" value="value">
-                    <label for="favourite"></label>
+                    <h3>Paranoia</h3>
+                    <input type="checkbox" name="fav" id="favourite5" value="value">
+                    <label for="favourite5"></label>
                     <p>Mijn zoektocht naar Stijloefeningen van Raymond Queneau brengt mij bij de bibliotheek. Een Franse vrouw [...]
 
                     </p>
@@ -153,8 +153,8 @@
                 <img src="Assets/Images/ongeluk%202.0.jpg" alt="thumbnail verhaal droom">
                 <div>
                     <h3>Ongeluk</h3>
-                    <input type="checkbox" name="checkbox" id="favourite" value="value">
-                    <label for="favourite"></label>
+                    <input type="checkbox" name="fav" id="favourite6" value="value">
+                    <label for="favourite6"></label>
                     <p>Voor het Centraal Station stap ik lijn 13 uit midden in een plas die zo diep [...]
 
                     </p>
@@ -167,7 +167,7 @@
             </article>
         </section>
     </div>
-
+<script type="text/javascript" src="Assets/Script/comment.js"></script>
 </body>
 
 </html>

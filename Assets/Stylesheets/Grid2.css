@@ -37,7 +37,7 @@ nav {
     grid-column-start: 3;
     display: inline-grid;
     grid-template-columns: 6rem auto 2.5rem 2.5rem;
-    align-items: center
+    align-items: center;
 }
 
 header > a {
@@ -56,6 +56,8 @@ h1 {
     grid-column-start: 2;
 
 }
+
+
 
 a[href="Login.html"] img,
 img[alt="search icon"] {
@@ -167,8 +169,9 @@ h4 {
 div + h3 {
     align-self: center;
 }
+/* FAVVORUTEEEEEEEEEEEEEE */
 
-h3 + input[id=favourite] {
+h3 + input[name=fav] {
     display: none;
     height: 2rem;
     width: 2rem;
@@ -177,20 +180,23 @@ h3 + input[id=favourite] {
     justify-self: center;
 }
 
-input[id=favourite] + label {
+h3 + input + label {
     display: block;
     background-image: url(Images/Fav%20Icon.png);
     background-repeat: no-repeat;
     background-size: 2rem;
     grid-column-start: 4;
+    transition: background 0.3s ease-in-out;
 }
 
-input[id=favourite]:checked + label {
+h3+ input:checked + label {
     display: block;
     background-image: url(Images/Fav%20Icon%20II.png);
     background-repeat: no-repeat;
     background-size: 2rem;
 }
+
+/* dropdown idk */
 
 #myDropdown input {
     margin-left: 1rem;
@@ -252,11 +258,11 @@ p {
     padding-bottom: 0.2rem;
 }
 
-h2 {
+div h2 {
     margin: 1.5rem;
 }
 
-h2 + h3 {
+div h2 + h3 {
     padding-bottom: 1.5rem;
 }
 
