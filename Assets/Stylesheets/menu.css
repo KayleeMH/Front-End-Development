@@ -36,7 +36,7 @@ header {
 nav {
     grid-column-start: 3;
     display: inline-grid;
-    grid-template-columns: 6rem auto 5rem 2.5rem 2.5rem;
+    grid-template-columns: 6rem auto 2.5rem 2.5rem;
     align-items: center;
 }
 
@@ -57,61 +57,29 @@ h1 {
 
 }
 
-.searchIcon {
-    height: 2em;
-    grid-column-start: 4;
-}
 
-.search1 {
-    background: white;
-    grid-column-start: 3;
-    height: 1.8rem;
-    width: 5.2rem;
-    padding: 0.1rem 1rem;
-    align-self: center;
-    box-shadow: inset 0 -0.125rem 0 #c5c5cb;
-    transition: 0.5s ease;
-    border: none;
-}
 
-.search2 {
-    display: none;
-}
-
-.search1:hover {
-    letter-spacing: 0.1rem;
-    box-shadow: inset 0 -0.125rem 0 #a6a6ac;
-}
-
-.search1:focus {
-    display: block;
-    outline: none;
-    border: none;
-    padding-left: 1rem;
-    box-shadow: inset 0 -0.125rem 0 #a6a6ac;
-}
-
-a[href="Login.html"] img {
+a[href="Login.html"] img,
+img[alt="search icon"] {
     height: 2rem;
     padding: 0.2rem;
 }
 
-/* img[alt="search icon"] {
+img[alt="search icon"] {
     grid-column-start: 3;
     justify-self: end;
     align-self: center;
-} */
+}
 
 a[href="Login.html"] img {
     grid-column-start: 4;
     align-self: center;
 }
 
-/*input[type="text"] {
+input[type="text"] {
     background-color: #e6e6e9;
     border: none;
 }
-*/
 
 /* sticky header from https://www.w3schools.com/howto/howto_js_sticky_header.asp */
 
@@ -201,7 +169,6 @@ h4 {
 div + h3 {
     align-self: center;
 }
-
 /* FAVVORUTEEEEEEEEEEEEEE */
 
 h3 + input[name=fav] {
@@ -222,7 +189,7 @@ h3 + input + label {
     transition: background 0.3s ease-in-out;
 }
 
-h3 + input:checked + label {
+h3+ input:checked + label {
     display: block;
     background-image: url(Images/Fav%20Icon%20II.png);
     background-repeat: no-repeat;
@@ -308,21 +275,7 @@ div h2 + h3 {
     background-size: cover;
     box-shadow: inset 0 -0.125rem 0 hsla(218, 100%, 25%, 0.75);
     transition: all 0.5s ease;
-}
 
-.top2 {
-    background-color: hsla(218, 100%, 25%, 0.75);
-    color: white;
-    box-shadow: inset 0 -0.125rem 0 hsla(218, 100%, 25%, 0.75);
-    transition: all 0.5s ease;
-}
-
-.top2 + article {
-    background-image: url(Images/Nichterig%20Desktop%201-2.png);
-    background-size: cover;
-    box-shadow: inset 0 -0.125rem 0 hsla(218, 100%, 25%, 0.75);
-    transition: all 0.5s ease;
-    color: white;
 }
 
 .top:hover,
@@ -331,24 +284,7 @@ div h2 + h3 {
     box-shadow: inset 0 -15rem 0 hsla(218, 100%, 25%, 0.75);
 }
 
-.top2 + article:hover {
-    color: white;
-    box-shadow: inset 0 -15rem 0 hsla(218, 100%, 25%, 0.75);
-}
-
-article > a {
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    color: white;
-}
-
-@media screen and (min-width: 58rem) {
-    .top2,
-    .top2 + article {
-        margin: 0;
-    }
-}
+/* DROP DOWN FILTER AND SORT from w3schools https://www.w3schools.com/howto/howto_css_dropdown.asp & https://www.w3schools.com/howto/howto_js_dropdown.asp */
 
 .dropdown > button {
     display: block;
@@ -378,7 +314,6 @@ section + div {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
-
 .menu2 {
     display: none;
 }
@@ -390,7 +325,6 @@ section + div {
 div:hover div button {
     text-decoration: underline;
 }
-
 #resultaten {
     display: block;
     font-weight: bold;
@@ -407,7 +341,6 @@ div:hover div button {
     box-shadow: inset 0 -0.125rem 0 #005ca0;
     transition: box-shadow 0.2s ease-in-out;
 }
-
 #resultaten:hover {
     box-shadow: inset 0 -3rem 0 hsla(218, 100%, 25%, 1);
     text-decoration: underline;
@@ -420,7 +353,6 @@ div:hover div button {
     float: right;
     padding-top: 2px;
 }
-
 .arrow2 {
     transform: rotate(-90deg);
     height: 1.5rem;
@@ -429,20 +361,20 @@ div:hover div button {
     padding-top: 5px;
 }
 
-
 /* NEW LAYOUTTTTT RESPONSIIIIIIIIIIiiiiiiiiiiiiiiiVEEEEE */
 
 @media screen and (max-width: 25rem) {
     h1 {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
-    nav {
-        grid-template-columns: 6rem auto 0.1rem 2.5rem 2.5rem;
+    a > img {
+        height: 1.3rem;
     }
+
 
     a[href="Login.html"] img,
     img[alt="search icon"] {
-        height: 1.5rem;
+        height: 1.7rem;
         padding: 0.2rem;
     }
 
@@ -505,7 +437,7 @@ div:hover div button {
     }
     div > section {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto auto;
         grid-column-gap: 2rem;
         margin: 1.5rem;
     }

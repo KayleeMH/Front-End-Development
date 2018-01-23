@@ -56,8 +56,28 @@ countChecked();
  
 $( "input[type=checkbox]" ).on( "click", countChecked );
 
+/* functie slideshow */
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
 
 /* BRONNEN
 https://www.w3schools.com/jsref/event_onfocus.asp onfocus element 
 https://stackoverflow.com/questions/36430561/how-can-i-check-if-my-element-id-has-focus gebruikt voor vergelijken van elementen actief/niet actief
-https://codepen.io/joostf/pen/bwrryR basis van de microinteractie */
+https://codepen.io/joostf/pen/bwrryR basis van de microinteractie 
+https://www.w3schools.com/w3css/w3css_slideshow.asp slideshow*/

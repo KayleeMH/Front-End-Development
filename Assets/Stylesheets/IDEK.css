@@ -71,7 +71,6 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
 }
-
 @media screen and (max-width: 75rem) {
     #titel {
         background-image: url("/Assets/Script/Nichterig/Desktop/Alinea3-0.png");
@@ -91,7 +90,7 @@ body {
     #nichterig5 {
         background-image: url("/Assets/Script/Nichterig/Desktop/Alinea3-4.png");
         background-size: contain;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat
     }
 }
 

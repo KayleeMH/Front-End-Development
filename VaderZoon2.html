@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Assets/Stylesheets/verhalenVZ.css">
+    <link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <a href="grid2.html"><img src="Assets/Images/NsVerhalen.png" alt="NSverhalen logo"></a>
+        <nav>
+            <h1>Mijn verhalen</h1>
+            <img src="Assets/Images/Search%20Icon.png" alt="search icon">
+            <a href="Login.html"><img src="Assets/Images/Profile%20Icon.png" alt="profiel icon"></a>
+        </nav>
+    </header>
+    <div class="display-container">
+        <div class="mySlides" id="vz1"></div>
+        <div class="mySlides" id="vz2"></div>
+        <div class="mySlides" id="vz2b"></div>
+        <div class="mySlides" id="vz3"></div>
+        <div class="mySlides" id="vz3b"></div>
+        <div class="mySlides" id="vz3c"></div>
+        <div class="mySlides" id="vz4"></div>
+        <div class="mySlides" id="vz4b"></div>
+        <div class="mySlides" id="vz5"></div>
+
+        <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    <div id="sectioncomment">
+        <label for="comment">g</label>
+        <input type="text" onfocus="commenting()" id="comment" class="comment" placeholder="Laat een comment achter...">
+        <input type="submit" class="commentsubmit" id="commentbutton">
+
+        <h4 class="like">63</h4>
+        <script type="text/javascript" src="Assets/Script/comment.js"></script>
+    </div>
+
+
+</body>
+</html>
